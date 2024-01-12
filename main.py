@@ -17,7 +17,7 @@ def extract_label_from_filename(filename):
     return ""
 
 class_names = ['red', 'blue', 'green', 'gray', 'white']
-train_image_paths = get_first_20_image_paths('C:/Users/ahmet/PycharmProjects/pythonProject/train/', class_names)
+train_image_paths = get_first_20_image_paths('C:/Users/EfeBasol/Documents/Kmeans/train', class_names)
 train_data = compute_histograms(train_image_paths)
 kmeans = KMeansManual(n_clusters=5, max_iters=100)
 kmeans.fit(train_data)
